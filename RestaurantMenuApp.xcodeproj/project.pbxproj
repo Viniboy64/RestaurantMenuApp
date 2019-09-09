@@ -14,7 +14,6 @@
 		4C7E469C2322E2DE00D29FAC /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7E469B2322E2DE00D29FAC /* MenuTableViewCell.swift */; };
 		4C7E469E2322E50100D29FAC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7E469D2322E50100D29FAC /* UIView.swift */; };
 		4C7E46A02322F0AB00D29FAC /* DishModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7E469F2322F0AB00D29FAC /* DishModelData.swift */; };
-		4C7E46A723248F3900D29FAC /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7E46A623248F3900D29FAC /* Label.swift */; };
 		4C7E46A923249EDD00D29FAC /* MenuTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7E46A823249EDD00D29FAC /* MenuTableViewHeader.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		4C7E469B2322E2DE00D29FAC /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		4C7E469D2322E50100D29FAC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4C7E469F2322F0AB00D29FAC /* DishModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishModelData.swift; sourceTree = "<group>"; };
-		4C7E46A623248F3900D29FAC /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		4C7E46A823249EDD00D29FAC /* MenuTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +80,6 @@
 				4C7E469F2322F0AB00D29FAC /* DishModelData.swift */,
 				4C7E4671231F374400D29FAC /* Assets.xcassets */,
 				4C7E46962322D82500D29FAC /* Extensions */,
-				4C7E46A123247F9E00D29FAC /* Helpers */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -122,14 +119,6 @@
 				4C7E46A823249EDD00D29FAC /* MenuTableViewHeader.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		4C7E46A123247F9E00D29FAC /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				4C7E46A623248F3900D29FAC /* Label.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +195,6 @@
 				4C7E466B231F374000D29FAC /* AppDelegate.swift in Sources */,
 				4C7E469C2322E2DE00D29FAC /* MenuTableViewCell.swift in Sources */,
 				4C7E4683231F422600D29FAC /* MenuTableViewController.swift in Sources */,
-				4C7E46A723248F3900D29FAC /* Label.swift in Sources */,
 				4C7E46A923249EDD00D29FAC /* MenuTableViewHeader.swift in Sources */,
 				4C7E46A02322F0AB00D29FAC /* DishModelData.swift in Sources */,
 			);

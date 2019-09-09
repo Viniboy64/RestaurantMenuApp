@@ -9,31 +9,8 @@
 import UIKit
 
 class MenuTableViewHeader: UIView {
-    private let classifierImageName: UIImageView = {
-        let imageView = UIImageView()
-        imageView.backgroundColor = .red
-        
-        imageView.layer.masksToBounds = true
-        imageView.layer.cornerRadius = 8.0
-        
-        // This enables autolayout to imageView.
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        
-        return imageView
-    }()
-    
-    private let classifierName: UILabel = {
-        let label = UILabel()
-        label.backgroundColor = .red
-        
-        label.layer.masksToBounds = true
-        label.layer.cornerRadius = 4.0
-        
-        // This enables autolayout to label.
-        label.translatesAutoresizingMaskIntoConstraints = false
-        
-        return label
-    }()
+    private let classifierImageName: UIImageView = UIImageView(backgroundColor: .red, cornerRadius: 8.0)
+    private let classifierName: UILabel = UILabel(backgroundColor: .red, cornerRadius: 4.0)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -45,18 +22,7 @@ class MenuTableViewHeader: UIView {
     
     private func setupLayout() {
         // This is a auxiliar view for the main content.
-        let contentView: UIView = {
-            let view = UIView()
-            view.backgroundColor = .blue
-            
-            view.layer.masksToBounds = true
-            view.layer.cornerRadius = 8.0
-            
-            // This enables autolayout to view.
-            view.translatesAutoresizingMaskIntoConstraints = false
-            
-            return view
-        }()
+        let contentView: UIView = UIView(backgroundColor: .blue, cornerRadius: 8.0)
         
         // Add subviews to class.
         addSubviews([contentView, classifierImageName])

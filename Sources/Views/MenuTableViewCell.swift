@@ -20,22 +20,10 @@ class MenuTableViewCell: UITableViewCell {
         }
     }
     
-    private let dishImageName: UIImageView = {
-        let imageView = UIImageView()
-        imageView.backgroundColor = .red
-        
-        imageView.layer.masksToBounds = true
-        imageView.layer.cornerRadius = 16.0
-        
-        // This enables autolayout to imageView.
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        
-        return imageView
-    }()
-    
-    private let dishName: UILabel = Label(frame: .zero)
-    private let dishDescription: UILabel = Label(frame: .zero)
-    private let dishPrice: UILabel = Label(frame: .zero)
+    private let dishImageName: UIImageView = UIImageView(backgroundColor: .red, cornerRadius: 16.0)
+    private let dishName: UILabel = UILabel(backgroundColor: .red, cornerRadius: 8.0)
+    private let dishDescription: UILabel = UILabel(backgroundColor: .red, cornerRadius: 8.0)
+    private let dishPrice: UILabel = UILabel(backgroundColor: .red, cornerRadius: 8.0)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -47,18 +35,7 @@ class MenuTableViewCell: UITableViewCell {
     
     private func setupLayout() {
         // This is a auxiliar view for the main content.
-        let contentView: UIView = {
-            let view = UIView()
-            view.backgroundColor = .blue
-            
-            view.layer.masksToBounds = true
-            view.layer.cornerRadius = 16.0
-            
-            // This enables autolayout to view.
-            view.translatesAutoresizingMaskIntoConstraints = false
-            
-            return view
-        }()
+        let contentView: UIView = UIView(backgroundColor: .blue, cornerRadius: 16.0)
         
         // Add subviews to cell.
         addSubviews([contentView, dishImageName])
